@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat SemiBold';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(80, 80, 80);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator-box{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 36vh;
+  height: 50vh;
+  background-color: rgb(228, 228, 228);
+  border-radius: 8px;
+}
+.number-input{
+  position:relative;
+  width: 95%;
+  height: 18vh;
+  margin-top: 0.5rem;
+  background-color: rgb(177, 177, 177);
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: xx-large;
+  text-align: right;
+  
+}
+.input{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  padding: 0.5rem;
+}
+.operations{
+  width: 55px;
+  height: 30px;
+  background-color: rgb(255, 166, 107);
+  padding: 5px;
+  border-radius: 8px;
+  margin: 4px;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  line-height: 20px;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.numbers{
+  width: 55px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 8px;
+  margin: 4px;
+  font-weight: 500;
+  font-size: large;
+  text-align: center;
+  line-height: 20px;
+  white-space: nowrap;
+  cursor: pointer;
 }
